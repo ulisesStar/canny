@@ -5,7 +5,9 @@ var ex = function(conector) {
 
     var Persona = sequelize.define('personas', {
         Nombre: Sequelize.STRING,
-        Edad: Sequelize.STRING,
+        Telefono: Sequelize.STRING,
+        Correo: Sequelize.STRING,
+        Mensaje: Sequelize.TEXT,
     })
 
     return Persona;

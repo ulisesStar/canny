@@ -1,18 +1,67 @@
-.objeto(tweeninit)
-.animacion(layout="row" layout-align="center center" botones)
-    .texto-container
-        .texto
-            #texto1
-                h1 La primera impresión se da a los 4 segundos
-        .texto
-            #texto2
-                h1 En una página de internet es igual
-        .texto
-            #texto3
-                h1 Nuestas páginas web hechas a medida de cada cliente
-        .texto
-            #texto4
-                h1 y estan optimizadas para atraer clientes que buscan lo que ofreces
-        .texto
-            #texto5
-                h1 Como tu que buscabas una página de internet
+.home(home)
+    section#section1.section
+        section#section1.section
+            .slogan-container(layout="row" layout-align="center center")
+                .slogan
+                    h1 vive la verdadera experiencia
+                    h1.special CANADIENSE
+    .parallax
+        .background
+        section#section2.section
+            .text-container
+                .text
+                    h1 ¿Que es Canny?
+                    p CANNY es una organización canadiense que tiene como misión el promover la cultura de Canadá en los diferentes países del mundo. Contamos con representantes en Vancouver, Toronto, cd. de México y Veracruz. Estamos registrados y aprobados ante el ‘Ministry of Goverment and Consumer Services” de Ontario, Canadá.
+                    p Te ayudamos a crear la mejor opción académica para ti, a que conozcas y vivas la verdadera experiencia canadiense.
+        section#section3.section
+            .text-container
+                .text
+                    h1 Lo que nos mueve
+                    p En canny creemos profundamente en que podemos cambiar y mejorar el mundo conociéndonos todos mejor, y esto va más allá de conocer un idioma, lo relevante es aprender del estilo de vida (biculturalismo) de otros países. Canadá es uno de los mejores países para vivir y aprender de forma segura en un ambiente multicultural
+    section#section4.section(layout="row" layout-align="center center")
+        slider(images="images")
+    section#section5.section(layout="row" layout-align="center center")
+        .form-container(flex="60" flex-xs="100" flex-sm="100")
+            .title(layout="row" layout-xs="column" layout-sm="column" layout-align="space-between center")
+                h1(flex) PLATICA CON NOSOTROS
+                .social(flex)
+                    md-button(href="www.facebook.com/CannyEducation/" ng-mouseover="facebook = true" ng-mouseleave="facebook = false" ng-class="facebook ? 'conHover' : 'sinHover'")
+                        md-icon
+                            svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 408.788 408.788" style="enable-background:new 0 0 408.788 408.788;" xml:space="preserve")
+                                path(d="M353.701,0H55.087C24.665,0,0.002,24.662,0.002,55.085v298.616c0,30.423,24.662,55.085,55.085,55.085h147.275l0.251-146.078h-37.951c-4.932,0-8.935-3.988-8.954-8.92l-0.182-47.087c-0.019-4.959,3.996-8.989,8.955-8.989h37.882v-45.498c0-52.8,32.247-81.55,79.348-81.55h38.65c4.945,0,8.955,4.009,8.955,8.955v39.704c0,4.944-4.007,8.952-8.95,8.955l-23.719,0.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285c5.363,0,9.524,4.683,8.892,10.009l-5.581,47.087c-0.534,4.506-4.355,7.901-8.892,7.901h-50.453l-0.251,146.078h87.631c30.422,0,55.084-24.662,55.084-55.084V55.085C408.786,24.662,384.124,0,353.701,0z")
+                    //- md-button
+                    //-     md-icon(ng-mouseover="snap = true" ng-mouseleave="snap = false" ng-class="snap ? 'conHover' : 'sinHover'")
+                    //-         svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 408.788 408.788" style="enable-background:new 0 0 408.788 408.788;" xml:space="preserve")
+                    //-             path(d="M256,493.903c-0.883,0-2.648,0-3.531,0c-0.883,0-1.766,0-2.648,0 c-30.014,0-45.903-8.828-64.441-22.069c-13.241-8.828-25.6-17.655-39.724-20.303c-7.945-0.883-15.007-1.766-22.069-1.766 c-12.359,0-22.069,1.766-29.131,3.531c-4.414,0.883-7.945,1.766-10.593,1.766s-6.179-0.883-7.945-5.297 c-0.883-4.414-1.766-7.945-2.648-11.476c-1.766-9.71-3.531-15.89-7.945-16.772C16.772,414.455,3.531,403.862,0,396.8 c0-1.766,0-2.648,0-3.531c0-2.648,1.766-5.297,4.414-5.297c74.152-12.359,107.697-88.276,108.579-90.924l0,0 c4.414-8.828,5.297-16.772,2.648-23.834c-5.297-12.359-22.069-17.655-32.662-21.186c-2.648-0.883-5.297-1.766-7.062-2.648 c-22.069-8.828-23.834-17.655-22.952-22.069c1.766-7.945,11.476-13.241,20.303-13.241c2.648,0,4.414,0,6.179,0.883 c9.71,4.414,18.538,7.062,26.483,7.062c10.593,0,15.007-4.414,15.89-5.297c0-5.297-0.883-10.593-0.883-15.89 c-2.648-35.31-5.297-78.566,6.179-103.283C159.779,23.393,230.4,17.214,251.586,17.214c0.883,0,8.828,0,8.828,0h0.883 c21.186,0,91.807,6.179,125.352,80.331c11.476,24.717,7.945,68.855,6.179,103.283v1.766c0,5.297-0.883,9.71-0.883,14.124 c0.883,0.883,4.414,4.414,14.124,5.297l0,0c7.062,0,15.89-2.648,24.717-7.062c2.648-0.883,5.297-1.766,7.945-1.766 c3.531,0,6.179,0.883,8.828,1.766l0,0c7.062,2.648,12.359,7.945,12.359,13.241c0,5.297-3.531,13.241-22.952,20.303 c-1.766,0.883-4.414,1.766-7.062,2.648c-10.593,3.531-27.365,8.828-32.662,21.186c-2.648,6.179-1.766,14.124,2.648,23.834l0,0 c1.766,3.531,32.662,79.448,106.814,91.807c2.648,0.883,4.414,2.648,4.414,5.297c0,0.883,0,1.766-0.883,3.531 c-2.648,7.062-15.007,16.772-63.559,24.717c-3.531,0.883-5.297,5.297-7.945,16.772c-0.883,3.531-1.766,7.945-2.648,11.476 s-3.531,5.297-7.062,5.297h-0.883c-2.648,0-6.179-0.883-10.593-1.766c-7.945-1.766-17.655-2.648-29.131-2.648 c-7.062,0-14.124,0.883-21.186,1.766c-14.124,2.648-26.483,11.476-39.724,20.303C309.848,485.959,286.014,493.903,256,493.903")
+                    md-button(href="http://www.youtube.com/channel/UCVlnyZvE2CC1RYdAzz230Pw"  ng-mouseover="youtube = true" ng-mouseleave="youtube = false" ng-class="youtube ? 'conHover' : 'sinHover'")    
+                        md-icon
+                            svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve")
+                                path(d="M506.703,145.655c0,0-5.297-37.959-20.303-54.731c-19.421-22.069-41.49-22.069-51.2-22.952 C363.697,62.676,256,61.793,256,61.793l0,0c0,0-107.697,0.883-179.2,6.179c-9.71,0.883-31.779,1.766-51.2,22.952 C9.71,107.697,5.297,145.655,5.297,145.655S0,190.676,0,235.697v41.49c0,45.021,5.297,89.159,5.297,89.159 s5.297,37.959,20.303,54.731c19.421,22.069,45.021,21.186,56.497,23.835C122.703,449.324,256,450.207,256,450.207 s107.697,0,179.2-6.179c9.71-0.883,31.779-1.766,51.2-22.952c15.007-16.772,20.303-54.731,20.303-54.731S512,321.324,512,277.186 v-41.49C512,190.676,506.703,145.655,506.703,145.655")
+                                polygon(style="fill:#d44943;" points="194.207,166.841 194.207,358.4 361.931,264.828")
+                    md-button(href="https://www.instagram.com/cannyeducation/" ng-mouseover="instagram = true" ng-mouseleave="instagram = false" ng-class="instagram ? 'conHover' : 'sinHover'")
+                        md-icon
+                            svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve")
+                                path(d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722 c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156 C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156 c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722 c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z")
+                                path(d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517 S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083 s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z")
+                                cirle(cx="418.31" cy="134.07" r="34.15")
+            
+            form(ng-submit="pushData();" ng-if="!formularioCompletado")
+                .formulario(layout="row" layout-xs="column" layout-sm="column" )
+                    .inputs(flex="50" flex-xs="50" flex-sm="50" layout="column" layout-align="space-between center")
+                        md-input-container
+                            label Nombre *
+                            input(type="text" ng-model="formulario.Nombre" required)
+                        md-input-container
+                            label e-mail *
+                            input(type="text" ng-model="formulario.Correo" required)
+                        md-input-container
+                            label Telefono
+                            input(type="text" ng-model="formulario.Telefono" required)
+                    .mensaje(flex="50" flex-xs="20" flex-sm="20" layout="row" layout-align="center center")
+                        md-input-container
+                            label Mensaje
+                            textarea(type="text" ng-model="formulario.Mensaje" required)
+                .button-container
+                    md-button(type="submit" id="submit" value="Submit") enviar
+            .gracias(ng-if="formularioCompletado")
+                h1 Gracias! Pronto nos comunicaremos con ustedes

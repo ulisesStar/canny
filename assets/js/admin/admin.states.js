@@ -16,19 +16,11 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 			}
 		}
 	})
-	.state('lista_trabajos', {
+	.state('contactos', {
 		url: '/',
 		views: {
 			'main': {
-				templateUrl: '/admin/lista_trabajos'
-			}
-		}
-	})
-	.state('trabajo', {
-		url: '/',
-		views: {
-			'main': {
-				templateUrl: '/admin/agregar_trabajo'
+				templateUrl: '/admin/lista_contactos'
 			}
 		}
 	})

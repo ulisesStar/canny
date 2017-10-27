@@ -1,8 +1,15 @@
-.slider
-	.slide(ng-repeat="image in images" ng-show="image.visible")
-		img(ng-src="{{image.src}}")
-	div(layout="row" layout-align="space-between center" layout-fill)
-		md-button(ng-click="prev()")
-			md-icon.material-icons keyboard_arrow_left
-		md-button(ng-click="next()")
-			md-icon.material-icons keyboard_arrow_right
+.slider(flex="70" flex-xs="100" flex-sm="100")
+    .slide-container
+        .slide(ng-repeat="image in images" ng-show="image.visible" ng-class="{'rightslide' : right, 'leftslide' : left }")
+            .slide-content(layout="row" layout-xs="column" layout-sm="column" layout-align="center center")
+                .iconos(flex-gt-sm="50" flex-sm="none" flex-xs="none")
+                    md-icon(md-svg-icon="{{image.src}}")
+                .texto-container(flex-xs="100")
+                    h1 {{image.title}}
+                    p {{image.contenido}}
+    .controls(layout="row" layout-align="center center")
+        .controls-content(layout-xs="row" layout-sm="row" layout-align-xs="space-between center" layout-align-sm="space-between center")
+            md-button(ng-click="prev(); left = true; right = false")
+                md-icon keyboard_arrow_left
+            md-button(ng-click="next(); right = true; left = false")
+                md-icon keyboard_arrow_right

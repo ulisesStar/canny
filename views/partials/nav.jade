@@ -1,22 +1,7 @@
-md-card(layout="row" layout-align="center center")
-	md-card-content
-		md-icon(md-colors="{color: 'cyan'}") star
-	span(flex)
-	//- Resolución completa
-	div.menu
-		md-menu-bar(hide-xs)
-			md-button(class="navbutton" ng-repeat="boton in botones" md-colors="{background: '{{boton.color}}'}" ui-sref="{{boton.sref}}")
-				md-icon(class="material-icons") {{boton.icon}}
-		//- Resolución mobil
-		md-menu-bar(hide-gt-xs)
-			md-menu
-				md-button(ng-click="$mdOpenMenu()")
-					md-icon.material-icons menu
-				md-menu-content
-					md-menu-item(ng-repeat="boton in botones")
-						md-button(class="navbutton" md-colors="{background: '{{boton.color}}'}" ui-sref="{{boton.sref}}") {{boton.title}}
-							md-icon(class="material-icons") {{boton.icon}}
-		md-button(ng-click="iniciosesion($event)" md-colors="{background: 'cyan'}")
-			md-icon settings
-
-		
+md-icon.logo(ui-sref="home" md-svg-icon="img/logo.svg")
+span(flex)
+md-menu-bar(hide-xs hide-sm)
+    button(ng-click="gotoAnchor(1)") ¿Que es Canny?
+    button(ng-click="gotoAnchor(2)") Lifesstyle
+    button(ng-click="gotoAnchor(4)") Siguenos
+    button(ng-click="gotoAnchor(5)") Contactanos

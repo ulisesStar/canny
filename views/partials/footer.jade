@@ -1,7 +1,17 @@
-p 
-    strong state: 
-    | {{$state.current.name}}
-.starbrand(href="https://www.starbrand.mx")
-    p Desarrollado por
-    md-icon(md-svg-icon="img/starbrand.svg")
+.info(layout="row" layout-xs="column" layout-sm="column" layout-align="space-between center" flex="70")
+    .mexico
+        p 
+            strong MX
+            |  (044) 229-241-4795
+    .canada
+        p 
+            strong CAN
+            |  +1(647) 531-4877
+    .correo
+        p cannyinfo@canny.com
+.canny(flex="30")
+    p  © Canny 2017
+//- .starbrand(href="https://www.starbrand.mx")
+//-     p Desarrollado por
+//-     md-icon(md-svg-icon="img/starbrand.svg")
 md-button(ng-click="iniciosesion($event)" md-colors="{background: 'cyan'}") Admin
